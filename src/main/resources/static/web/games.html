@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Salvo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">BATTLESHIP</a>
+            <div class="ml-auto p-2 bd-highlight">
+                <form class="form-inline" id="login-form" onsubmit="return false">
+                    <label>Name: <input type="text" name="username"></label>
+                    <label>Password: <input type="text" name="password"></label>
+                    <button type="submit" id="login" class="btn btn-primary" value="Login">Sign In</button>
+                    <button type="submit" id="signUp" class="btn btn-light" value="Signup">Sign Up</button>
+                </form>
+            </div>
+            <div class="ml-auto p-2 bd-highlight logout">
+
+                <form class="form-inline" id="logout-form-main" onsubmit="return false">
+                    <button type="button" class="btn btn-dark" id="logout">Log out</button>
+                </form>
+                <div class="user-logged-in" id="user-logged-in-main"></div>
+            </div>
+        </nav>
+
+     <!--       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <form id="login-form" onsubmit="return false">
+                        <label>Name: <input type="text" name="username"></label>
+                        <label>Password: <input type="text" name="password"></label>
+                        <button type="submit" id="login" value="Login">Sign In</button>
+                        <button type="submit" id="signUp" value="Signup">Sign Up</button>
+                    </form>
+
+                    <form class="logOut" id="logout-form-main" onsubmit="return false">
+                        <p class="user-logged-in" id="user-logged-in-main"></p>
+                        <button id="logout">Log out</button>
+                    </form>
+                </div>
+            </nav>
+    -->
+        <div class="flex-container">
+                <div>
+                    <h1 class="leadTit">Leaderboard</h1>
+                    <div class='container tabl'><table class='table table-responsive' id="leaderboard"></table></div>
+                    <h2 class="listTit">Games available!</h2>
+                    <button type="button" class="btn btn-warning" id="btnCrtGame">Create Game</button>
+                </div>
+            <section class="list">
+                <div class="container">
+                    <div class="row" id="lista"></div>
+                </div>
+            </section>
+        </div>
+        <script src="scripts/games.js"></script>
+
+    </body>
+</html>
